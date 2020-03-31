@@ -5,7 +5,7 @@ router = {
 	'host':'192.168.10.1',
 	'username':'noob',
 	'password':'N00b',
-	'port':8022,
+	#'port':8022,
 	'secret':'class'
 }
 
