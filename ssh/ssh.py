@@ -17,4 +17,5 @@ for r in routers:
 	router_connect = ConnectHandler(**router)
 	output = router_connect.send_command('show ip int brief')
 	print(output)
-	
+
+	print("##################################################")
