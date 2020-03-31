@@ -5,10 +5,16 @@ router = {
 	'host':'192.168.10.1',
 	'username':'noob',
 	'password':'N00b',
-	#'port':8022,
 	'secret':'class'
 }
 
-router_connect = ConnectHandler(**router)
-output = router_connect.send_command('show ip int brief')
-print(output)
+routers = [
+	router,
+	router,
+	]
+
+for r in routers:
+	router_connect = ConnectHandler(**router)
+	output = router_connect.send_command('show ip int brief')
+	print(output)
+	
