@@ -10,5 +10,5 @@ router = {
 }
 
 router_connect = ConnectHandler(**router)
-output = router_connect.sendcommand('show ip int brief')
+output = router_connect.send_command('show ip int brief')
 print(output)
