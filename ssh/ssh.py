@@ -14,7 +14,7 @@ routers = [
 	]
 
 for r in routers:
-	router_connect = ConnectHandler(**router)
+	router_connect = ConnectHandler(**r)
 	output = router_connect.send_command('show ip int brief')
 	print(output)
 
