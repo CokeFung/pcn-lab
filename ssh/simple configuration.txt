@@ -1,0 +1,21 @@
+﻿conf t
+int f0/0
+ip add 192.168.10.1 255.255.255.0
+no shut
+exit
+ip domain-name lab-pcn.com
+crypto key generate rsa
+1024
+line vty 0 15
+loggin syn
+transport input ssh
+login local
+password 7
+exit
+line con 0
+loggin syn
+login local
+exit
+username noob privilege 15 password N00b
+enable secret class
+sevice password-encryption
